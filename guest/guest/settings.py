@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfResponseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'localhost',
         'PORT':'3306',
-        'NAME':'guest',  # 修改数据库配置guest为正式库，guest_test为测试库，用于测试
+        'NAME':'guest_test',  # 修改数据库配置guest为正式库，guest_test 为测试库，用于测试
         'USER':'root',
         'PASSWORD':'123456',
         'OPTION':{'init_command':"SET sql_mode='STRICT_TRANS_TABLES'",},
